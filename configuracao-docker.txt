@@ -1,0 +1,11 @@
+    8  2026-10-14 00:35:52 #INICIO CONFIGURACAO DOCKER
+    9  2026-10-14 00:35:59 sudo  apt  update  &&  sudo  apt  upgrade  -y
+   10  2026-10-14 00:36:08 sudo  apt  install  apt-transport-https  ca-certificates  curl  software-properties-common
+   11  2026-10-14 00:36:40 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg]  https://download.docker.com/linux/ubuntu  $(lsb_release -cs) stable"  |  sudo  tee  /etc/apt/sources.list.d/docker.list  >  /dev/null
+   12  2026-10-14 00:36:45 sudo apt update
+   13  2026-10-14 00:36:50 sudo apt install docker-ce docker-ce-cli containerd.io
+   14  2026-10-14 00:36:56 docker --version
+   15  2026-10-14 00:37:03 sudo  usermod  -aG  docker yago
+   16  2026-10-14 00:37:11 #FIM CONFIGURACAO DOCKER
+   17  2026-10-14 00:37:12 history
+   18  2026-10-14 00:37:26 history > configuracaoDocker.txt
